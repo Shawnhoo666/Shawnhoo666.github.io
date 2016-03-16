@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -220,125 +220,85 @@
         <!-- // End height spacing helper -->
 
         <!-- ============================ END Hero Image =========================== -->
-      <!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/03/16/Java 网络编程笔记/"></a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2016-03-16T13:44:28.281Z" itemprop="datePublished">
           2016-03-16
       </time>
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        Java 网络编程笔记标签（空格分隔）： Java学习笔记 java
-
-1:网络编程(理解)    (1)网络编程：用Java语言实现计算机间数据的信息传递和资源共享    (2)网络编程模型    (3)网络编程的三要素        A:IP地址            a:点分十进制            b:IP地址的组成            c:IP地址的分类            d:dos命令            e:I
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/03/16/Java 网络编程笔记/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1></h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2015/12/30/Work-hard-Play-Harder/">Work hard Play Harder</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2015-12-30T10:36:43.000Z" itemprop="datePublished">
-          2015-12-30
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        That’s why I decided to create an independent blog标签（空格分隔）： 博客说明 博客公告
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="Java__u7F51_u7EDC_u7F16_u7A0B_u7B14_u8BB0"><a href="#Java__u7F51_u7EDC_u7F16_u7A0B_u7B14_u8BB0" class="headerlink" title="Java 网络编程笔记"></a>Java 网络编程笔记</h1><p>标签（空格分隔）： Java学习笔记 java</p>
+<hr>
+<p>1:网络编程(理解)<br>    (1)网络编程：用Java语言实现计算机间数据的信息传递和资源共享<br>    (2)网络编程模型<br>    (3)网络编程的三要素<br>        A:IP地址<br>            a:点分十进制<br>            b:IP地址的组成<br>            c:IP地址的分类<br>            d:dos命令<br>            e:InetAddress<br>        B:端口<br>            是应用程序的标识。范围：0-65535。其中0-1024不建议使用。<br>        C:协议<br>            UDP:数据打包,有限制,不连接,效率高,不可靠<br>            TCP:建立数据通道,无限制,效率低,可靠<br>    (3)Socket机制<br>        A:通信两端都应该有Socket对象<br>        B:所有的通信都是通过Socket间的IO进行操作的<br>    (4)UDP协议发送和接收数据(掌握 自己补齐代码)<br>        发送：<br>            创建UDP发送端的Socket对象<br>            创建数据并把数据打包<br>            发送数据<br>            释放资源</p>
+<pre><code>    接收：
+        创建UDP接收端的Socket对象
+        创建数据包用于接收数据
+        接收数据
+        解析数据包
+        释放资源
+(5)TCP协议发送和接收数据(掌握 自己补齐代码)
+    发送：
+        创建TCP客户端的Socket对象
+        获取输出流，写数据
+        释放资源
 
-A.主观排斥主流社交媒体
-
-    记得打小接触的第一个社交类平台，就是wuli “qq”, 当然还有他附加的“qq空间”功能，接着我还分别用过“新浪微博”，“人人网”，“微信”，“Facebook”，“Twitter”，“Instagram”,&quot;WhatsApp&quot;，“Vine
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2015/12/30/Work-hard-Play-Harder/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+    接收：
+        创建TCP服务器端的Socket对象
+        监听客户端连接
+        获取输入流，读取数据
+        释放资源
+(6)案例：
+    A:UDP
+        a:最基本的UDP协议发送和接收数据
+        b:把发送数据改进为键盘录入
+        c:一个简易聊天小程序并用多线程改进
+    B:TCP
+        a:最基本的TCP协议发送和接收数据
+        b:服务器给出反馈
+        c:客户端键盘录入服务器控制台输出
+        d:客户端键盘录入服务器写到文本文件
+        e:客户端读取文本文件服务器控制台输出
+        f:客户端读取文本文件服务器写到文本文件
+        g:上传图片
+        h:多线程改进上传文件
+</code></pre>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2015/12/30/I-am-Shawnhoo666/">I am Shawnhoo666</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2015-12-30T10:21:43.000Z" itemprop="datePublished">
-          2015-12-30
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        #About Me
-标签（空格分隔）： 杂记
-新年伊始，做个总结、写个计划吧    我叫朱皓、性别男、取向女、身高一米多、体重100多、三观端正、爱党爱国、无前科，现役软件工程专业大三狗。也是一只准程序猿！
-
-    正值花季年华，我本是一个与世无争，天真烂漫，悠然自得的大学僧，终日上课、吃饭、恋爱、刷题、刷代码、睡觉，日子也好不快活。但是时间犹如白驹过隙，转瞬即逝。转眼我已经升级大三成为无良学弟学妹眼中的新一代“油腻学长”了。不知为何
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2015/12/30/I-am-Shawnhoo666/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
         <nav class="pagination" role="pagination">
-          
-          
-        </nav>
+    
+    
+    <a class="pull-right" href="/2015/12/30/Work-hard-Play-Harder/">
+        Work hard Play Harder →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/03/16/Java 网络编程笔记/" data-title="" data-url="http://yoursite.com/2016/03/16/Java 网络编程笔记/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>WORK HARD ! PLAY HARDER !!</p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
