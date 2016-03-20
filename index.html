@@ -228,12 +228,17 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
-                    <h3><a href="/2016/03/17/多线程笔记2（Java）/">多线程笔记2（Java）</a></h3>
+                    <h3><a href="/2016/03/20/正则表达式（Java）/">正则表达式（Java）</a></h3>
                     <span>
                         <span class="post-meta">
-      <time datetime="2016-03-17T06:04:40.000Z" itemprop="datePublished">
-          2016-03-17
+      <time datetime="2016-03-20T13:55:25.000Z" itemprop="datePublished">
+          2016-03-20
       </time>
+    
+    
+    | 
+    <a href='/tags/Java-Summary/'>Java Summary</a>
+    
     
 </span>
                     </span>
@@ -241,13 +246,84 @@
                 <div class="col-md-8">
                     <p>
                       
-                        标签（空格分隔）：Java JavaSummary
-
-1:多线程(理解)    (1)JDK5以后的针对线程的锁定操作和释放操作        Lock锁    (2)死锁问题的描述和代码体现    (3)生产者和消费者多线程体现(线程间通信问题)        以学生作为资源来实现的
+                        Java的正则表达式讲解：（为了能看清，本文正则表达式用中文的句号代替英文句点）1    英文句点符号：匹配单个任意字符。eg:表达式”t。o  可以匹配：tno，t#o，teo等等。不可以匹配：tnno，to，Tno，t正o等。2    方括号：只有方括号里面指定的字符才参与匹配，也只能匹配单个字符。eg:表达式：t[abcd]n  只可以匹配：tan，tbn，tcn，tdn。不可以匹配：thn，tabn，tn等。3  | 符号。相当
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2016/03/20/正则表达式（Java）/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2016/03/20/Eclipse快捷键大全/">Eclipse快捷键大全</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2016-03-20T13:54:14.000Z" itemprop="datePublished">
+          2016-03-20
+      </time>
+    
+    
+    | 
+    <a href='/tags/Tool-Tips/'>Tool Tips</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        Eclipse快捷键大全(转载)Ctrl+1 快速修复(最经典的快捷键,就不用多说了)Ctrl+D: 删除当前行Ctrl+Alt+↓ 复制当前行到下一行(复制增加)Ctrl+Alt+↑ 复制当前行到上一行(复制增加)Alt+↓ 当前行和下面一行交互位置(特别实用,可以省去先剪切,再粘贴了)Alt+↑ 当前行和上面一行交互位置(同上)Alt+← 前一个编辑的页面Alt+→ 下一个编辑的页面(当然是针对上面那条来说了)Alt+Enter 显
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2016/03/20/Eclipse快捷键大全/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2016/03/17/多线程笔记2（Java）/">多线程笔记2（Java）</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2016-03-17T06:04:40.000Z" itemprop="datePublished">
+          2016-03-17
+      </time>
+    
+    
+    | 
+    <a href='/tags/Java-Summary/'>Java Summary</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        1:多线程(理解)    (1)JDK5以后的针对线程的锁定操作和释放操作        Lock锁    (2)死锁问题的描述和代码体现    (3)生产者和消费者多线程体现(线程间通信问题)        以学生作为资源来实现的
     资源类：Student
     设置数据类：SetThread(生产者)
     获取数据类：GetThread(消费者)
-    测试类：St
+    测试类：StudentDemo
+
+    代码：
+        
                       
                     </p>
                     
@@ -282,14 +358,13 @@
                 <div class="col-md-8">
                     <p>
                       
-                        标签（空格分隔）： Java JavaSummary
-
-1:多线程(理解)    (1)多线程：一个应用程序有多条执行路径        进程：正在执行的应用程序        线程：进程的执行单元，执行路径        单线程：一个应用程序只有一条执行路径        多线程：一个应用程序有多条执行路径
+                        1:多线程(理解)    (1)多线程：一个应用程序有多条执行路径        进程：正在执行的应用程序        线程：进程的执行单元，执行路径        单线程：一个应用程序只有一条执行路径        多线程：一个应用程序有多条执行路径
     多进程的意义?
         提高CPU的使用率
     多线程的意义?
         提高应用程序的使用率
-(2)
+(2)Java程序的运行原理及JVM的启动是多线程的吗?
+  
                       
                     </p>
                     
@@ -313,15 +388,18 @@
           2016-03-16
       </time>
     
+    
+    | 
+    <a href='/tags/Java-Summary/'>Java Summary</a>
+    
+    
 </span>
                     </span>
                 </div>
                 <div class="col-md-8">
                     <p>
                       
-                        Java 网络编程笔记标签（空格分隔）： Java学习笔记 java
-
-1:网络编程(理解)    (1)网络编程：用Java语言实现计算机间数据的信息传递和资源共享    (2)网络编程模型    (3)网络编程的三要素        A:IP地址            a:点分十进制            b:IP地址的组成            c:IP地址的分类            d:dos命令            e:I
+                        1:网络编程(理解)    (1)网络编程：用Java语言实现计算机间数据的信息传递和资源共享    (2)网络编程模型    (3)网络编程的三要素        A:IP地址            a:点分十进制            b:IP地址的组成            c:IP地址的分类            d:dos命令            e:InetAddress        B:端口            是应
                       
                     </p>
                     
@@ -345,6 +423,11 @@
           2015-12-30
       </time>
     
+    
+    | 
+    <a href='/tags/About-me/'>About me</a>
+    
+    
 </span>
                     </span>
                 </div>
@@ -361,40 +444,6 @@ A.主观排斥主流社交媒体
                     
                     <p class="pull-right readMore">
                         <a href="/2015/12/30/Work-hard-Play-Harder/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2015/12/30/I-am-Shawnhoo666/">I am Shawnhoo666</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2015-12-30T10:21:43.000Z" itemprop="datePublished">
-          2015-12-30
-      </time>
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        #About Me
-标签（空格分隔）： 杂记
-新年伊始，做个总结、写个计划吧    我叫朱皓、性别男、取向女、身高一米多、体重100多、三观端正、爱党爱国、无前科，现役软件工程专业大三狗。也是一只准程序猿！
-
-    正值花季年华，我本是一个与世无争，天真烂漫，悠然自得的大学僧，终日上课、吃饭、恋爱、刷题、刷代码、睡觉，日子也好不快活。但是时间犹如白驹过隙，转瞬即逝。转眼我已经升级大三成为无良学弟学妹眼中的新一代“油腻学长”了。不知为何
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2015/12/30/I-am-Shawnhoo666/">Read More...</a>
                     </p>
                     
                 </div>
