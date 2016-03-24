@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2016/3 | Shawn&#39;s Space</title>
+  <title>反射（Java） | Shawn&#39;s Space</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -221,85 +221,61 @@
 
         <!-- ============================ END Hero Image =========================== -->
       
-
-
-<section id="services">
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/24/反射（Java）/">反射（Java）</a></h4>
-                            
-                            <p><time datetime="2016-03-24T05:43:41.000Z"><a href="/2016/03/24/反射（Java）/">2016-03-24</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/20/正则表达式（Java）/">正则表达式（Java）</a></h4>
-                            
-                            <p><time datetime="2016-03-20T13:55:25.000Z"><a href="/2016/03/20/正则表达式（Java）/">2016-03-20</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/20/Eclipse快捷键大全/">Eclipse快捷键大全</a></h4>
-                            
-                            <p><time datetime="2016-03-20T13:54:14.000Z"><a href="/2016/03/20/Eclipse快捷键大全/">2016-03-20</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/17/多线程笔记2（Java）/">多线程笔记2（Java）</a></h4>
-                            
-                            <p><time datetime="2016-03-17T06:04:40.000Z"><a href="/2016/03/17/多线程笔记2（Java）/">2016-03-17</a></time></p>
-                        </div>
-                    
-                        
-                            </div><div class="row boxes">
-                            
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/17/多线程笔记1（Java）/">多线程笔记1（Java）</a></h4>
-                            
-                            <p><time datetime="2016-03-17T06:04:17.000Z"><a href="/2016/03/17/多线程笔记1（Java）/">2016-03-17</a></time></p>
-                        </div>
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/03/16/网络编程笔记（Java）/">网络编程笔记（Java）</a></h4>
-                            
-                            <p><time datetime="2016-03-16T13:59:31.000Z"><a href="/2016/03/16/网络编程笔记（Java）/">2016-03-16</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-03-24T05:43:41.000Z" itemprop="datePublished">
+          2016-03-24
+      </time>
+    
+    
+    | 
+    <a href='/tags/Java-Summary/'>Java Summary</a>
+    
+    
+</span>
+                <h1>反射（Java）</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>1:反射(理解)<br>    (1)类的加载及类加载器<br>    (2)反射：<br>        通过字节码文件对象，去使用成员变量，构造方法，成员方法<br>    (3)反射的使用<br>        A:通过反射获取构造方法并使用<br>        B:通过反射获取成员变量并使用<br>        C:通过反射获取成员方法并使用<br>    (4)反射案例<br>        A:通过反射运行配置文件的内容<br>        B:通过反射越过泛型检查<br>        C:通过反射给任意的一个对象的任意的属性赋值为指定的值<br>    (5)动态代理</p>
+<p>2:设计模式<br>    (1)装饰设计模式<br>        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));</p>
+<pre><code>    Scanner sc = new Scanner(System.in);
+(2)模版设计模式
+</code></pre><p>3:JDK新特性<br>    (1)JDK5(掌握)<br>        装箱和拆箱<br>        泛型<br>        增强for<br>        静态导入<br>        可变参数<br>        枚举<br>    (2)JDK6(了解)<br>    (3)JDK7(理解)<br>        二进制的表现形式<br>        用_分隔数据<br>        switch语句可是用字符串<br>        泛型推断(菱形泛型)<br>        多catch的使用<br>        自动释放资源的用法<br>    (4)JDK8(了解)<br>        可以去网上了解资料</p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p>WORK HARD ! PLAY HARDER !!</p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2016/03/20/正则表达式（Java）/">
+        正则表达式（Java） →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/03/24/反射（Java）/" data-title="反射（Java）" data-url="http://yoursite.com/2016/03/24/反射（Java）/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
